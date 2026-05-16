@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "shinobiway:shuriken"
+    },
+    "title": {
+      "text": "Опытный метатель"
+    },
+    "description": {
+      "text": "Достигните 2500 очков мастерства сюрикена"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "shinobiway:mastery_1000",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

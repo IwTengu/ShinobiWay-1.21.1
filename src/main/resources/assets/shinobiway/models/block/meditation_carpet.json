@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "shinobiway:block/meditation_carpet"
+  }
+}

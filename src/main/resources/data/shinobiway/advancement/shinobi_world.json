@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "shinobiway:shuriken"
+    },
+    "title": {
+      "text": "Shinobi World!"
+    },
+    "description": {
+      "text": "Добро пожаловать в мир шиноби"
+    },
+    "background": "shinobiway:textures/block/meditation_carpet.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "entered_world": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

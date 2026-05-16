@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "shinobiway:shuriken"
+    },
+    "title": {
+      "text": "Путь сюрикена"
+    },
+    "description": {
+      "text": "Достигните 1000 очков мастерства сюрикена"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "shinobiway:myshinobiway",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

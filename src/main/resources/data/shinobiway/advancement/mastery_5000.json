@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "shinobiway:shuriken"
+    },
+    "title": {
+      "text": "Мастер сюрикена"
+    },
+    "description": {
+      "text": "Достигните 5000 очков мастерства сюрикена"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "shinobiway:mastery_2500",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

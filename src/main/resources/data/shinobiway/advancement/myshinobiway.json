@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "shinobiway:shuriken"
+    },
+    "title": {
+      "text": "My Shinobi Way"
+    },
+    "description": {
+      "text": "Попадите в яблочко мишени с расстояния не менее 3 блоков используя сюрикен или кунай"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "shinobiway:shinobi_world",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
