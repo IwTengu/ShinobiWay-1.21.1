@@ -12,7 +12,6 @@ import net.neoforged.neoforge.client.event.RenderGuiEvent;
  * ║  Рисует HUD поверх стандартного интерфейса Minecraft.       ║
  * ║  Показывает: статус режима + полоску кулдауна дэша.         ║
  * ╚══════════════════════════════════════════════════════════════╝
- *
  * Позиция: левый нижний угол, над хотбаром.
  */
 @EventBusSubscriber(modid = "shinobiway", value = Dist.CLIENT)
@@ -22,8 +21,6 @@ public class CombatHudRenderer {
     private static final int COLOR_ACTIVE_TEXT = 0xFFFF4444;
     private static final int COLOR_IDLE_TEXT   = 0xFF888888;
 
-    private static final int COLOR_DASH_FILL  = 0xFF44AAFF;
-    private static final int COLOR_DASH_BG    = 0xFF333333;
 
     @SubscribeEvent
     public static void onRenderGui(RenderGuiEvent.Post event) {
@@ -77,54 +74,6 @@ public class CombatHudRenderer {
                 true
         );
 
-        // ─────────────────────────────────────────────────────────
-        // Полоска дэша
-        // ─────────────────────────────────────────────────────────
-
-        if (data.isActive()) {
-
-            int barX = x;
-            int barY = y + 12;
-
-            int barWidth  = 80;
-            int barHeight = 4;
-
-            // Фон
-            gui.fill(
-                    barX,
-                    barY,
-                    barX + barWidth,
-                    barY + barHeight,
-                    COLOR_DASH_BG
-            );
-
-            // Прогресс
-            float progress = 1.0F -
-                    ((float) data.getDashCooldown()
-                            / CombatData.DASH_MAX_COOLDOWN);
-
-            int filled = (int) (barWidth * progress);
-
-            if (filled > 0) {
-                gui.fill(
-                        barX,
-                        barY,
-                        barX + filled,
-                        barY + barHeight,
-                        COLOR_DASH_FILL
-                );
-            }
-
-            // Текст справа
-            gui.drawString(
-                    mc.font,
-                    "ДЭШ",
-                    barX + barWidth + 4,
-                    barY - 2,
-                    COLOR_DASH_FILL,
-                    false
-            );
-        }
 
         // ─────────────────────────────────────────────────────────
         // Здесь можно добавить:

@@ -2,8 +2,6 @@ package net.iwtengu.shinobiway.command;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
-import net.iwtengu.shinobiway.animation.ModNetwork;
-import net.iwtengu.shinobiway.animation.PlayAnimationPacket;
 import net.iwtengu.shinobiway.player.ShurikenMasteryData;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

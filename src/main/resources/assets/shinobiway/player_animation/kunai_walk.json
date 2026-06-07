@@ -1,0 +1,118 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kunai_walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"body": {
+					"rotation": [5.25, 0, 0],
+					"position": [0, -0.45, 0],
+					"scale": 1
+				},
+				"rightArm": {
+					"rotation": [-106.4064, 24.3749, 28.0761],
+					"position": {
+						"0.0": [0, -3.8, 1],
+						"0.5": [0, -4.3, 1],
+						"1.0": [0, -3.8, 1]
+					},
+					"scale": 1
+				},
+				"rightItem": {
+					"rotation": [0, 90, 180],
+					"position": [0.75, 2.5, 1]
+				},
+				"leftArm": {
+					"rotation": [-42.122, 3.9225, 0.9994],
+					"position": {
+						"0.0": [0.525, -0.925, 0],
+						"0.5": [0.52, -1.42, 0],
+						"1.0": [0.525, -0.925, 0]
+					},
+					"scale": 1
+				},
+				"rightLeg": {
+					"rotation": {
+						"0.0": {"vector": [-36.25, 0, 0], "lerp_mode": "catmullrom"},
+						"0.0625": {"vector": [-18.5, 0, 0], "lerp_mode": "catmullrom"},
+						"0.125": {"vector": [-0.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.1875": {"vector": [-0.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.25": {"vector": [-0.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.3125": {"vector": [4.625, 0, 0], "lerp_mode": "catmullrom"},
+						"0.375": {"vector": [10, 0, 0], "lerp_mode": "catmullrom"},
+						"0.4375": {"vector": [16.875, 0, 0], "lerp_mode": "catmullrom"},
+						"0.5": {"vector": [23.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.5625": {"vector": [33, 0, 0], "lerp_mode": "catmullrom"},
+						"0.625": {"vector": [42.25, 0, 0], "lerp_mode": "catmullrom"},
+						"0.6875": {"vector": [59.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.75": {"vector": [77.25, 0, 0], "lerp_mode": "catmullrom"},
+						"0.8125": {"vector": [36.125, 0, 0], "lerp_mode": "catmullrom"},
+						"0.875": {"vector": [-5, 0, 0], "lerp_mode": "catmullrom"},
+						"0.9375": {"vector": [-20.625, 0, 0], "lerp_mode": "catmullrom"},
+						"1.0": {"vector": [-36.25, 0, 0], "lerp_mode": "catmullrom"}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0625": [0, 0, -1.2125],
+						"0.125": [0, 0, -2.425],
+						"0.1875": [0, 0, -1.3],
+						"0.25": [0, 0, -0.17],
+						"0.3125": [0, 0, -0.17],
+						"0.375": [0, 0, -0.17],
+						"0.4375": [0, 0, -0.085],
+						"0.5": [0, 0, 0],
+						"0.5625": [0, -0.4, 0.1125],
+						"0.625": [0, -0.8, 0.225],
+						"0.6875": [0, -1.3875, -1.235],
+						"0.75": [0, -1.975, -2.695],
+						"0.8125": [0, 0.14, -2.5175],
+						"0.875": [0, 2.255, -2.34],
+						"0.9375": [0, 1.1275, -1.17],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"leftLeg": {
+					"rotation": {
+						"0.0": {"vector": [22.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.0625": {"vector": [29.375, 0, 0], "lerp_mode": "catmullrom"},
+						"0.125": {"vector": [36, 0, 0], "lerp_mode": "catmullrom"},
+						"0.1875": {"vector": [56, 0, 0], "lerp_mode": "catmullrom"},
+						"0.25": {"vector": [76, 0, 0], "lerp_mode": "catmullrom"},
+						"0.3125": {"vector": [34.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.375": {"vector": [-6.5, 0, 0], "lerp_mode": "catmullrom"},
+						"0.4375": {"vector": [-20.625, 0, 0], "lerp_mode": "catmullrom"},
+						"0.5": {"vector": [-34.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.5625": {"vector": [-19.625, 0, 0], "lerp_mode": "catmullrom"},
+						"0.625": {"vector": [-4.5, 0, 0], "lerp_mode": "catmullrom"},
+						"0.6875": {"vector": [-5.125, 0, 0], "lerp_mode": "catmullrom"},
+						"0.75": {"vector": [-5.75, 0, 0], "lerp_mode": "catmullrom"},
+						"0.8125": {"vector": [2.25, 0, 0], "lerp_mode": "catmullrom"},
+						"0.875": {"vector": [10.25, 0, 0], "lerp_mode": "catmullrom"},
+						"0.9375": {"vector": [16.5, 0, 0], "lerp_mode": "catmullrom"},
+						"1.0": {"vector": [22.75, 0, 0], "lerp_mode": "catmullrom"}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0625": [0, 0.11, -1.305],
+						"0.125": [0, 0.22, -2.61],
+						"0.1875": [0, -0.615, -2.8925],
+						"0.25": [0, -1.45, -3.175],
+						"0.3125": [0, 0.55, -3.1725],
+						"0.375": [0, 2.55, -3.17],
+						"0.4375": [0, 1.275, -1.585],
+						"0.5": [0, 0, 0],
+						"0.5625": [0, 0, -1.5375],
+						"0.625": [0, 0, -3.075],
+						"0.6875": [0, 0, -1.6225],
+						"0.75": [0, 0, -0.17],
+						"0.8125": [0, 0.125, -0.0575],
+						"0.875": [0, 0.25, 0.055],
+						"0.9375": [0, 0.125, 0.0275],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

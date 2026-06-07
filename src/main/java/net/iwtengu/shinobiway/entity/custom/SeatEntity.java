@@ -81,19 +81,12 @@ public class SeatEntity extends Entity {
         // Увеличиваем таймер
         meditationTicks++;
 
-        // Каждую секунду
-        if (meditationTicks >= 20) {
-
-            meditationTicks = 0;
-
-            // Получаем chakra data
-            ChakraData chakra = ChakraAttachment.get(player);
-
-            // Увеличиваем максимум чакры на 10
-            chakra.addMax(10f);
-
-            // Синхронизируем клиент
-            ChakraSyncPacket.send(player);
+        // Слепота пока игрок медитирует — обновляем каждые 2 секунды
+        if (meditationTicks % 40 == 0) {
+            player.addEffect(new net.minecraft.world.effect.MobEffectInstance(
+                    net.minecraft.world.effect.MobEffects.BLINDNESS,
+                    60, 0, true, false, true
+            ));
         }
     }
 

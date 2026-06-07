@@ -1,0 +1,5 @@
+{
+  "replace": false,
+  "entities": ["minecraft:player"],
+  "slots": ["left_eye", "right_eye", "face"]
+}

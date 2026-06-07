@@ -2,6 +2,17 @@
   "item.shinobiway.shuriken": "Сюрикен",
   "item.shinobiway.kunai": "Кунай",
   "item.shinobiway.senbon": "Сенбон",
+  "item.shinobiway.eye": "Глаз",
+  "item.shinobiway.headband_leaf": "Повязка листа",
+  "item.shinobiway.headband_sand": "Повязка песка",
+  "item.shinobiway.headband_leaf_broken": "Сломанная повязка листа",
+  "item.shinobiway.headband_sand_broken": "Сломанная повязка песка",
+
+  "curios.identifier.left_eye": "Левый глаз",
+  "curios.identifier.right_eye": "Правый глаз",
+
+  "item.shinobiway.eye.owner": "Владелец: %s",
+  "item.shinobiway.eye.unbound": "Владелец не определён",
 
   "block.shinobiway.meditation_carpet": "Ковер для медитации",
 

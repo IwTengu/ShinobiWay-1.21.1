@@ -1,0 +1,9 @@
+{
+  "order": 100,
+  "size": 0,
+  "icon": "shinobiway:slot/left_eye",
+  "add_cosmetic": false,
+  "use_native_gui": true,
+  "render_toggle": true,
+  "drop_rule": "DEFAULT"
+}

@@ -30,6 +30,14 @@ repositories {
     maven {
         url = 'https://maven.kosmx.dev/'
     }
+
+    maven {
+        url = 'https://maven.theillusivec4.top/'
+    }
+
+    maven {
+        url "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+    }
 }
 
 base {
@@ -121,8 +129,11 @@ configurations {
 
 dependencies {
     implementation "dev.kosmx.player-anim:player-animation-lib-forge:1.0.2-rc1+1.21"
-    // Example optional mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
+    implementation "software.bernie.geckolib:geckolib-neoforge-1.21.1:4.7"
+    implementation "top.theillusivec4.curios:curios-neoforge:9.5.0+1.21.1"
+
+    runtimeOnly "top.theillusivec4.curios:curios-neoforge:9.5.0+1.21.1"
+
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
     // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
     // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it

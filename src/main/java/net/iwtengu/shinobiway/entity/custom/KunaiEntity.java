@@ -12,11 +12,14 @@ public class KunaiEntity extends AbstractArrow {
 
     private ItemStack stack = ItemStack.EMPTY;
 
-    public KunaiEntity(EntityType<? extends KunaiEntity> type, Level level) {
+    public KunaiEntity(EntityType<? extends KunaiEntity> type,
+                       Level level) {
         super(type, level);
     }
 
-    public KunaiEntity(Level level, LivingEntity shooter) {
+    public KunaiEntity(Level level,
+                       LivingEntity shooter) {
+
         super(ModEntities.KUNAI.get(), level);
 
         this.setOwner(shooter);
@@ -44,7 +47,9 @@ public class KunaiEntity extends AbstractArrow {
         super.tick();
 
         if (this.isInWater() || this.isInLava()) {
-            this.setDeltaMovement(this.getDeltaMovement().scale(0.75D));
+            this.setDeltaMovement(
+                    this.getDeltaMovement().scale(0.75D)
+            );
         }
     }
 
@@ -53,7 +58,9 @@ public class KunaiEntity extends AbstractArrow {
         super.onHitEntity(result);
 
         if (result.getEntity() instanceof net.minecraft.world.entity.LivingEntity living) {
+
             int arrows = living.getArrowCount();
+
             if (arrows > 0) {
                 living.setArrowCount(arrows - 1);
             }

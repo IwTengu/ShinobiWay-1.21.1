@@ -2,6 +2,17 @@
   "item.shinobiway.shuriken": "Shuriken",
   "item.shinobiway.kunai": "Kunai",
   "item.shinobiway.senbon": "Senbon",
+  "item.shinobiway.headband_leaf": "Leaf headband",
+  "item.shinobiway.headband_sand": "Sand headband",
+  "item.shinobiway.headband_leaf_broken": "Broken leaf headband",
+  "item.shinobiway.headband_sand_broken": "Broken sand headband",
+  "item.shinobiway.eye": "Eye",
+
+  "curios.identifier.left_eye": "Left Eye",
+  "curios.identifier.right_eye": "Right Eye",
+
+  "item.shinobiway.eye.owner": "Owner: %s",
+  "item.shinobiway.eye.unbound": "Owner not found",
 
   "block.shinobiway.meditation_carpet": "Meditation Carpet",
 

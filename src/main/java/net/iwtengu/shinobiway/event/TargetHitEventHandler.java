@@ -7,6 +7,7 @@ import net.iwtengu.shinobiway.combat.CombatHelper;
 import net.iwtengu.shinobiway.entity.custom.KunaiEntity;
 import net.iwtengu.shinobiway.entity.custom.ShurikenEntity;
 import net.iwtengu.shinobiway.player.ShurikenMasteryData;
+import net.iwtengu.shinobiway.util.EyeSlotHelper;
 import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
@@ -14,6 +15,8 @@ import net.minecraft.server.PlayerAdvancements;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.TargetBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -93,9 +96,11 @@ public class TargetHitEventHandler {
 
             ChakraData chakra = ChakraAttachment.get(player);
             chakra.unlock();
-            ChakraSyncPacket.send((ServerPlayer) player);
+            ChakraSyncPacket.send(player);
 
-            CombatHelper.unlock((ServerPlayer) player);
+            CombatHelper.unlock(player);
+
+            EyeSlotHelper.unlockEyeSlots(player);
         }
     }
 

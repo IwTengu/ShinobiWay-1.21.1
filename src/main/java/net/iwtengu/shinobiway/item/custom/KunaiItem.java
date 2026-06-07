@@ -35,7 +35,9 @@ public class KunaiItem extends Item {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+    public InteractionResultHolder<ItemStack> use(Level level,
+                                                  Player player,
+                                                  InteractionHand hand) {
 
         ItemStack stack = player.getItemInHand(hand);
 
@@ -84,6 +86,10 @@ public class KunaiItem extends Item {
             );
 
             level.addFreshEntity(kunai);
+
+            if (!player.getAbilities().instabuild) {
+                stack.shrink(1);
+            }
         }
 
         player.getCooldowns().addCooldown(this, 2);

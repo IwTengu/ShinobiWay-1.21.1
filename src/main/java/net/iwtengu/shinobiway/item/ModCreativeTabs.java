@@ -23,6 +23,11 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.MEDITATION_CARPET.get());
                         output.accept(ModItems.SHURIKEN.get());
                         output.accept(ModItems.KUNAI.get());
+                        output.accept(ModItems.HEADBAND_LEAF.get());
+                        output.accept(ModItems.HEADBAND_SAND.get());
+                        output.accept(ModItems.HEADBAND_LEAF_BROKEN.get());
+                        output.accept(ModItems.HEADBAND_SAND_BROKEN.get());
+                        output.accept(ModItems.EYE.get());
                     })
                     .build());
 
